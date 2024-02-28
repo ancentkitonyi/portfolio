@@ -1,0 +1,96 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+
+/************* NAVBAR ***************/
+
+.myNavbar {
+    background-color: #3C3636;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.myNavbar a.logo {
+    color: #ABAD42;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.myNavbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.myNavbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.myNavbar a:hover,
+.myNavbar a.active {
+    color: #ABAD42;
+}
+
+.myNavbar .navIcon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .myNavbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .myNavbar .nav-links {
+        margin-top: 5px;
+    }
+
+    .myNavbar a:not(:first-child) {
+        display: none;
+    }
+
+    .myNavbar a.navIcon {
+        float: right;
+        display: block;
+    }
+
+    .myNavbar.responsive {
+        position: relative;
+    }
+
+    .myNavbar.responsive .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .myNavbar.responsive a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .myNavbar.responsive .logo-container {
+        margin-bottom: 5px;
+        text-align: center;
+        width: 100%;
+
+    }
+    .myNavbar.responsive a.logo {
+        text-align: center;
+    }
+}
