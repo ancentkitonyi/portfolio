@@ -1,6 +1,8 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
+    background-color: #272323;
+    color: white;
 }
 
 
@@ -94,3 +96,60 @@ body {
         text-align: center;
     }
 }
+
+
+/**********LANDING PAGE**********/
+
+.profileImg {
+    text-align: center;
+    background-color: #ABAD42;
+}
+
+.welcome-message {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connectBtns{
+    text-align: center; 
+    display:inline-block; 
+}
+
+.btn {
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 0%;
+  }
+  
+.cvBtn {
+    background-color:#ABAD42; 
+    color: white; 
+    border: 2px solid #ABAD42;
+  }
+  
+.cvBtn:hover {
+    background-color:#3C3636;
+    color: white;
+    border: 2px solid #ABAD42;
+  }
+  
+.hireBtn {
+    background-color:white;
+    color: black;
+    border: 2px solid #ABAD42;
+  }
+  
+.hireBtn:hover {
+    background-color:#3C3636; 
+    color: white;
+    border: 2px solid #ABAD42;
+  }
